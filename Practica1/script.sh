@@ -10,7 +10,7 @@ echo $i hilos >> results.txt
 for j in $(seq 0 15)
 do
 d1=$(date "+%s%N")/1000000
-./blureffect $k 7 $i
+./blureffect $k 21 $i
 d2=$(date "+%s%N")/1000000
 echo $(($d2 - $d1)) >> results.txt
 done
