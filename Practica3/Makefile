@@ -1,2 +1,2 @@
 all:
-	g++ `pkg-config --cflags opencv` blureffect.cpp `pkg-config --libs opencv` -o blureffect -fopenmp -w -std=c++11
+	nvcc blureffect.cu -o blureffect `pkg-config opencv --cflags --libs`
