@@ -70,19 +70,6 @@ int main(int argc, char** argv){
 		blur_thread(ID*(height/num_threads), (ID+1)*(height/num_threads));
 	}
 
-
-	/*
-	//Lanzar hilos dividiendo la imagen verticalmente.
-	for(int i=0; i<num_threads; i++){
-		m_threads[i] = thread(blur_thread, i*(height/num_threads), (i+1)*(height/num_threads));
-	}
-
-	//Esperar por hilos.
-	for(int i=0; i<num_threads; i++){
-		m_threads[i].join();
-	}
-	*/
-
 	//Escribir imagen difuminada.
 	imwrite("blur_image.jpg", blur_image);
 	return 0;

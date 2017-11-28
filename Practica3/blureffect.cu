@@ -44,11 +44,7 @@ __global__ void blur_thread(const int* d_image, const int width, const int heigh
 	if(id < height){
 		for(int i=0; i<width; i++){
 			for(int j=ir; j<fr; j++){
-				//d_blur[j+i*height] = d_image[j+i*height];;
 				d_blur[j+i*height] = cal_intensity(d_image, i, j, width, height, kernel);
-				//d_blur[j*width+i] = cal_intensity(d_image, i, j, width, height, kernel);
-				//d_blur[j+i*height] = d_image[j+i*height];
-				//d_blur[j+i*height] = d_image[j+i*height];
 			}
 		}
 	}
