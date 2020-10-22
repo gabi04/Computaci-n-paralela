@@ -1,6 +1,6 @@
 # Blureffect
 
-Blureffect es un proyecto de la materia computación paralela de la Universidad Nacional de Colombia.
+Blureffect,proyecto de computación paralela.
 
 El proyecto consiste en hacer difuminado de imágenes usando CPU's y GPU's.
 
